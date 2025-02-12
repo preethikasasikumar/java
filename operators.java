@@ -1,3 +1,4 @@
+//using the short cirxuit operators to find the max of three numbers
 public class operators
 {
 	public static void main(String[] args) {
