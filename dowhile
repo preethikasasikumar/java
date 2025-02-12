@@ -1,0 +1,15 @@
+//control statements
+public class Main
+{
+	public static void main(String[] args) {
+	    int i = 0, n = 2;
+	    do{
+	        
+	        System.out.print(n);
+	        n++;
+	        i++;
+	    }while(n<5);
+	    System.out.println();
+		System.out.println("Hello World");
+	}
+}
