@@ -10,5 +10,8 @@ public class primenumbers {
         if(count==2){
             System.out.println(num+" " +"is a prime number");
         }
+        else{
+            System.out.print("Not a prime");
+        }
     }
 }
