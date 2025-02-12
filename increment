@@ -1,0 +1,12 @@
+// post increment and pre increment
+public class increment
+{
+	public static void main(String[] args) {
+		int x = 10;
+		int y = --x + x++ + ++x + --x + x++;
+		int z = x++ + ++x + ++x + x++ + ++x;
+		System.out.println(y);
+		System.out.println(z);
+		
+	}
+}
