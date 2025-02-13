@@ -1,0 +1,19 @@
+
+public class Main
+{
+	public static void main(String[] args) {
+		int num=12345;
+		int remainder,rev=0;
+		while(num>0){
+		    remainder=num % 10;
+		    if(remainder%2==0){
+		        System.out.println("even numbers ="+remainder);
+		       
+		    }
+		    else if (remainder%2!=0){
+		        System.out.println("odd numbers= "+remainder);
+		    }
+		    num = num / 10;
+	}
+}
+}
