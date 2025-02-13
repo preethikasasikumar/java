@@ -1,0 +1,20 @@
+
+public class Main
+{
+	public static void main(String[] args) {
+		int num = 345,remainder,result,armstrongnumber=0;
+		int temp = num;
+		while(num!=0){
+		    remainder = num% 10;
+		    result = (int) Math.pow(remainder,3);
+		    armstrongnumber=armstrongnumber+result;
+		    num = num/10;
+		}
+		if(temp==armstrongnumber){
+		    System.out.println( temp + " is an armstrong number");
+		}
+		else{
+		    System.out.println( temp + " is not an armstrong number");
+		}
+}
+}
