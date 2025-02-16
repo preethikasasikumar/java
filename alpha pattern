@@ -1,4 +1,4 @@
-// R pattern
+// Drawing R patternR pattern
 
 public class Main
 {
@@ -21,4 +21,33 @@ public class Main
             System.out.println();
 		} 
 	}
+}
+// drawing A pattern
+public class APattern {
+    public static void main(String[] args) {
+        int n = 3; // Adjust as needed
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= 2 * n - 1; j++) { // Adjust columns for spacing
+                if (j == n - i + 1 || j == n + i - 1 || i == n) { // Conditions for stars
+                    System.out.print("A");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+            
+        }
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (j == 1 || j == n ) {
+                    System.out.print("A"); // Print " R" without a newline
+                } else {
+                    System.out.print("   "); // Print two spaces for alignment
+                }
+            }
+            System.out.println();
+    
+}
+}
 }
