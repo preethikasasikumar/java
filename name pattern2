@@ -1,0 +1,80 @@
+public class Main {
+    public static void main(String[] args) {
+        int n = 5; // Height of the pattern (you can adjust this)
+
+        // Printing 'P'
+        for (int i = 0; i < n; i++) {
+            // 'P' pattern
+            for (int j = 0; j < n; j++) {
+                if (j == 0 || (i == 0 && j < n / 2) || (i == n / 2 && j < n) || (j == n - 1 && i != n / 2 && i < n)) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.print("  "); // Space between letters
+
+            // Printing 'R'
+            for (int j = 0; j < n; j++) {
+                if (j == 0 || i == 0 || i == n / 2 || (j == n - 1 && i != n / 2 && i < n)) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.print("  "); // Space between letters
+
+            // Printing 'E'
+            for (int j = 0; j < n; j++) {
+                if (j == 0 || i == 0 || i == n - 1 || i == n / 2) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.print("  "); // Space between letters
+
+            // Printing 'E'
+            for (int j = 0; j < n; j++) {
+                if (j == 0 || i == 0 || i == n - 1 || i == n / 2) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.print("  "); // Space between letters
+
+            // Printing 'T'
+            for (int j = 0; j < n; j++) {
+                if (i == 0 || j == n / 2) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.print("  "); // Space between letters
+
+            // Printing 'H'
+            for (int j = 0; j < n; j++) {
+                if (j == 0 || j == n - 1 || i == n / 2) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.print("  "); // Space between letters
+
+            // Printing 'I'
+            for (int j = 0; j < n; j++) {
+                if (j == n / 2 || i == 0 || i == n - 1) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+
+            // Move to the next line after each row
+            System.out.println();
+        }
+    }
+}
