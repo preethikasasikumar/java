@@ -61,3 +61,55 @@ public class Main
         }
 	}
 }
+// Y as pattern 
+public class YPattern {
+    public static void main(String[] args) {
+        int n = 7; // Height of the pattern (odd number for symmetry)
+        
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i < n / 2) {
+                    // Upper part of Y (forming the split)
+                    if (j == i || j == n - i - 1) {
+                        System.out.print("*");
+                    } else {
+                        System.out.print(" ");
+                    }
+                } else {
+                    // Lower part of Y (the stem)
+                    if (j == n / 2) {
+                        System.out.print("*");
+                    } else {
+                        System.out.print(" ");
+                    }
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+// A pattern
+		 n = 3; // Adjust as needed
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= 2 * n - 1; j++) { // Adjust columns for spacing
+                if (j == n - i + 1 || j == n + i - 1 || i == n) { // Conditions for stars
+                    System.out.print("A");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+            
+        }
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (j == 1 || j == n ) {
+                    System.out.print(" A"); // Print " R" without a newline
+                } else {
+                    System.out.print("   "); // Print two spaces for alignment
+                }
+            }
+            System.out.println();
+    
+}
