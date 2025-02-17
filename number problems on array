@@ -1,0 +1,21 @@
+public class Main {
+    public static void main(String[] args) {
+        int num = 999;
+        
+        // If the number is already a single digit, no need to reduce
+        if (num < 10) {
+            System.out.println("Single digit: " + num);
+        } else {
+            // Calculate sum of digits and reduce to a single digit
+            while (num >= 10) {
+                int sum = 0;
+                while (num > 0) {
+                    sum += num % 10;
+                    num /= 10;
+                }
+                num = sum;
+            }
+            System.out.println("Single digit: " + num);
+        }
+    }
+}
