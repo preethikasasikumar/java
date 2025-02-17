@@ -28,3 +28,37 @@ public class Main
 		System.out.println("third maximum : "+third_max);
 	}
 }
+
+public class Main {
+    public static void main(String[] args) {
+        int arr[] = {1, 2, 3, 4, 5};
+        int n = arr.length;
+
+        if (n < 3) {
+            System.out.println("Array should have at least three elements.");
+            return;
+        }
+
+        int max = Integer.MIN_VALUE;
+        int second_max = Integer.MIN_VALUE;
+        int third_max = Integer.MIN_VALUE;
+
+        for (int i = 0; i < n; i++) {
+            if (arr[i] > max) {
+                third_max = second_max;
+                second_max = max;
+                max = arr[i];
+            } else if (arr[i] > second_max && arr[i] < max) {
+                third_max = second_max;
+                second_max = arr[i];
+            } else if (arr[i] > third_max && arr[i] < second_max) {
+                third_max = arr[i];
+            }
+        }
+
+        System.out.println("Max: " + max);
+        System.out.println("Second max: " + second_max);
+        System.out.println("Third max: " + third_max);
+    }
+}
+
