@@ -1,0 +1,42 @@
+public class Main {
+
+    public static int[] arraySorting(int[][] arr) {
+        int rows = arr.length;
+        int cols = arr[0].length;
+        int[] array = new int[rows * cols];
+        int index = 0;
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                array[index++] = arr[i][j];
+            }
+        }
+
+        
+        for (int i = 0; i < array.length - 1; i++) {
+            for (int j = 0; j < array.length - i - 1; j++) {
+                if (array[j] > array[j + 1]) {
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                }
+            }
+        }
+
+        return array;
+    }
+
+    public static void main(String[] args) {
+        int[][] grid = {{1, 4, 2}, {3, 5, 6}, {9, 7, 8}};
+        int[] sortedList = arraySorting(grid);
+
+        System.out.print("{");
+        for (int i = 0; i < sortedList.length; i++) {
+            System.out.print(sortedList[i]);
+            if (i < sortedList.length - 1) {
+                System.out.print(",");
+            }
+        }
+        System.out.println("}");
+    }
+}
