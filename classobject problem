@@ -111,3 +111,25 @@ class Main{
         
     }
 }
+/////////////////////////////////////////////////////////////////////////
+class car{
+    String model;
+    
+    car(String m){
+        model = m;
+    }
+    public void display(){
+        System.out.println("model : " +model);
+    }
+    
+        
+    
+}
+class Main{
+    public static void main(String []args){
+        car c1= new car("porsche");
+        c1.display();
+        
+        
+    }
+}
