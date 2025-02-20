@@ -1,0 +1,38 @@
+import java.util.Scanner;
+class Student {
+    
+    String name;
+    long registerNumber;
+
+    
+    public void printDetails() {
+        System.out.println("Name: " + name + ", Register Number: " + registerNumber);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Student student1 = new Student();
+
+        
+        student1.name = scanner.nextLine();
+        student1.registerNumber = scanner.nextLong();
+        scanner.nextLine();
+        
+
+       
+        student1.printDetails();
+        
+        
+        Student student2 = new Student();
+        student2.name = scanner.nextLine();
+        student2.registerNumber = scanner.nextLong();
+        scanner.nextLine();
+        student2.printDetails();
+        
+        Student student3 = new Student();
+        student3.name = scanner.nextLine();
+        student3.registerNumber = scanner.nextLong();
+        student3.printDetails();
+    }
+}
