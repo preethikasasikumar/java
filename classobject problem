@@ -26,6 +26,25 @@ class CarRental {
             System.out.println("Unknown car type.");
         }
     }
+class Book {
+    String title;
+    int price;
+    
+    Book() {
+        title = "Java Programming";  
+        price = 100;  
+        System.out.println("book title: " + title);
+        System.out.println("Price: " + price);
+    }
+    
+    
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Book book1 = new Book();
+    }
+}
 
     
     public void display() {
