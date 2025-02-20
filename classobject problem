@@ -26,6 +26,8 @@ class CarRental {
             System.out.println("Unknown car type.");
         }
     }
+
+///////////////////////////////////////////////////////////////
 class Book {
     String title;
     int price;
@@ -61,5 +63,28 @@ public class Main {
         carRental.getCar(); 
         carRental.getCarRent();  
         carRental.display(); 
+    }
+}
+
+/////////////////////////////////////////////////
+class car {
+    String title;
+    int price;
+    
+    car() {
+        String brand =" unknown";
+    }
+    public void setbrand(){
+        String brand ="Porsche";
+        System.out.println("The brand is :" + brand);
+    }
+    
+    
+}
+
+public class Main {
+    public static void main(String[] args) {
+        car car1 = new car();
+        car1.setbrand();
     }
 }
