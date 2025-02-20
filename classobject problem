@@ -133,3 +133,35 @@ class Main{
         
     }
 }
+class book{
+    String title;
+    String author;
+    String price;
+    book(){
+        System.out.println("BOOK");
+    }
+    book(book b1){
+        this.title=b1.title;
+    }
+    book( String title){
+        this.title = title;
+        
+    }
+    public void display(){
+        System.out.println("Title of the book : " + title);
+        
+    }
+    
+        
+    
+}
+class Main{
+    public static void main(String []args){
+      book b1 = new book("serenity");
+      b1.display();
+      book b2 = new book(b1);
+      b2.display();
+        
+        
+    }
+}
