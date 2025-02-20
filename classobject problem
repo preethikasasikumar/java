@@ -165,3 +165,34 @@ class Main{
         
     }
 }
+class rectangle{
+    Double length;
+    Double width;
+    
+    rectangle(rectangle rectangle1){
+        this.length=rectangle1.length;
+        this.width=rectangle1.width;
+    }
+    rectangle(Double length , Double width){
+        this.length = length;
+        this.width = width;
+        
+    }
+    public void display(){
+        System.out.println("The length of the rectangle is : " +length);
+        System.out.println("The width of the rectangle is : " +width);
+        
+    }
+    
+        
+    
+}
+class Main{
+    public static void main(String []args){
+      rectangle rectangle1 = new rectangle(12.0,34.0);
+      rectangle rectangle2 = new rectangle(rectangle1);
+      rectangle1.display();
+      rectangle2.display();
+        
+    }
+}
