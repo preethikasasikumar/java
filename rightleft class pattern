@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+class RightAngleTriangle{
+    int i,j;
+   public void display(){
+       Scanner scanner = new Scanner(System.in);
+       int n = scanner.nextInt();
+       for(i = 0; i <= n ; i++){
+           for(j= 0; j <= i ; j++){
+               System.out.print(" *");
+       }
+       System.out.println();
+   }
+   }
+    }
+class LeftAngleTriangle{
+       public void display(){
+        Scanner scanner = new Scanner(System.in);
+       int n = scanner.nextInt();;
+       for(int i = 1; i <= n ; i++){
+           for(int j= 1; j <= n - i+ 1 ; j++){
+               System.out.print("  ");
+       }
+            for(int j= 1; j <= i; j++){
+               System.out.print(" *");
+       }
+       System.out.println();
+        }
+    }
+
+}
+
+class Main{
+   
+    public static void main(String []args){
+    RightAngleTriangle t = new RightAngleTriangle();
+    
+    t.display();
+   
+    
+    LeftAngleTriangle t1 = new LeftAngleTriangle();
+    
+    t1.display();
+    }
+	
+    }
+
+
