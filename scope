@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+class Add{
+    private int a, b, c;
+    
+    private void get(){
+        Scanner scanner = new Scanner(System.in);
+        a = scanner.nextInt();
+        b = scanner.nextInt();
+        c = a+ b;
+    }
+    
+    public void display(){
+        get();
+        System.out.println("Sum : " +c);
+    }
+    }
+
+
+
+class Main{
+   
+    public static void main(String []args){
+    Scanner scanner = new Scanner(System.in);
+    Add add = new Add();
+    
+    add.display();
+    }
+	
+    }
+
+
