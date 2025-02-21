@@ -1,0 +1,36 @@
+class Sum {
+    private int a, b;
+
+    public Sum(int a, int b) {
+        this.a = a;
+        this.b = b;
+    }
+
+    public int get_a() {
+        return a;
+    }
+
+    public int get_b() {
+        return b;
+    }
+}
+
+class Sub extends Sum {
+    int c;
+
+    public Sub(int a, int b) {
+        super(a, b); 
+    }
+
+    public void display() {
+        c = get_a() + get_b(); 
+        System.out.println("Sum: " + c);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Sub sub = new Sub(10, 5); 
+        sub.display(); 
+    }
+}
