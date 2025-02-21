@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+class Calculator{
+    public int a ,b ,c;
+    Scanner scanner = new Scanner(System.in);
+    public void add(){
+        a = scanner.nextInt();
+        b = scanner.nextInt();
+        c = a +b ;
+        System.out.println("Addition : " + c);
+    }
+    public void sub(int a, int b){
+        
+        c = a - b ;
+        System.out.println("Subtraction : " + c);
+    }
+    public int div(int a, int b){
+    a = scanner.nextInt();
+    b= scanner.nextInt();
+        return(a/b);
+    }
+    public int mul(){
+    a = scanner.nextInt();
+    b = scanner.nextInt();
+    c = a * b;
+    return c;
+    }
+    }
+
+
+
+class Main{
+   
+    public static void main(String []args){
+    Scanner scanner = new Scanner(System.in);
+    Calculator c = new Calculator();
+    c.add();
+    int a = scanner.nextInt();
+    int b = scanner.nextInt();
+    c.sub(a,b);
+    
+    
+    int result = c.mul();
+    System.out.println("Multiplication : "+ result);
+    
+    System.out.println("Division : " + c.div(a,b));
+   
+    }
+	
+    }
+
+
