@@ -1,0 +1,27 @@
+
+class Counter
+{
+
+		static int count = 0;
+		
+		public void counter(){
+		    count++;
+		}
+		public void display(){
+		    counter();
+		    System.out.println("the number of objects created : " + count);
+		}
+	}
+
+
+class Main{
+    public static void main(String []args){
+        Counter c1 = new Counter();
+        Counter c2 = new Counter();
+        Counter c3 = new Counter();
+        
+        c1.display();
+        c2.display();
+        c3.display();
+    }
+}
