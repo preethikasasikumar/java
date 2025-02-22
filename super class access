@@ -1,0 +1,20 @@
+class Super{
+    static void display(){
+        System.out.println("in super class");
+    }
+}
+
+class Sub extends Super {
+    static void display(){
+        System.out.println("in sub class");
+    }
+}
+
+class Main{
+    public static void main(String []args){
+        Super  s = new Sub ();
+        Sub s1 = new Sub();
+        s.display();
+        s1.display();
+    }
+}
