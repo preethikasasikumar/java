@@ -1,0 +1,33 @@
+class Supermost {
+    private int supermostVar = 10;
+
+    public int getSupermostVar() {
+        return supermostVar;
+    }
+}
+
+class Superclass extends Supermost {
+    protected int superclassVar = 20;
+
+    public int getSuperclassVar() {
+        return superclassVar;
+    }
+}
+
+class Subclass extends Superclass {
+    int subclassVar = 30;
+
+    public int getSubclassVar() {
+        return subclassVar;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Subclass obj = new Subclass();
+
+        System.out.println("Supermost Variable: " + obj.getSupermostVar());
+        System.out.println("Superclass Variable: " + obj.getSuperclassVar());
+        System.out.println("Subclass Variable: " + obj.getSubclassVar());
+    }
+}
