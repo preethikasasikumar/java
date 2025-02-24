@@ -1,0 +1,14 @@
+abstract class  A{
+    final static int a = get_a();
+    static public int get_a(){
+        return 20;
+    }static void display(){
+        System.out.println(a);
+    }
+}
+
+class Main{
+    public static void main(String []args){
+        A.display();
+    }
+}
