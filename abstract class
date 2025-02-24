@@ -1,0 +1,22 @@
+import java.util.Scanner;
+abstract class Circle{
+    protected double area;
+    abstract void calculate_area();
+}
+class Area extends Circle{
+    private double r;
+    public Area()
+    {
+        Scanner s =new Scanner(System.in);
+        r = s.nextDouble();
+        
+    }
+    protected void calculate_area(){
+        area = 3.14*r*r;
+        System.out.println("Area = " + area);
+    }
+    public static void main(String []args){
+        Area a = new Area();
+        a.calculate_area();
+    }
+}
