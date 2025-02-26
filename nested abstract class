@@ -2,13 +2,13 @@ abstract class A{
     abstract void display();
     
     void show(){
-        System.out.println("default");
+        System.out.println("inside A show");
     }
     abstract class B{
     abstract public void call();
     
     void print(){
-        System.out.println("default");
+        System.out.println("inside B print");
     }
     
 }
@@ -26,12 +26,13 @@ class X extends A{
     
 }
 
-class main{
+class Main{
     public static void main(String []args){
-        public static void main(String []args){
+       
         X x = new X();
         x.display();
-        x.show();
-    }
+        x.call();
+        
+    
     }
 }
