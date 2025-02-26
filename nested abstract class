@@ -1,0 +1,37 @@
+abstract class A{
+    abstract void display();
+    
+    void show(){
+        System.out.println("default");
+    }
+    abstract class B{
+    abstract public void call();
+    
+    void print(){
+        System.out.println("default");
+    }
+    
+}
+
+    
+}
+class X extends A{
+    public void display(){
+        System.out.println("abstract from A");
+    }
+    public void call(){
+        System.out.println("Abstract from B");
+    }
+    
+    
+}
+
+class main{
+    public static void main(String []args){
+        public static void main(String []args){
+        X x = new X();
+        x.display();
+        x.show();
+    }
+    }
+}
