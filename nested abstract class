@@ -3,7 +3,7 @@ abstract class A{
     
     void show(){
         System.out.println("inside A show");
-    }
+    } 
     abstract class B{
     abstract public void call();
     
