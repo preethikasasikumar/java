@@ -1,0 +1,34 @@
+interface A{
+    static void display(){
+        System.out.println("Static from A");
+    }
+    abstract void show();
+    default void write(){
+        System.out.println("Default");
+    }
+}
+interface B extends A{
+    static void display(){
+        System.out.println("Static from B");
+    }
+    abstract void show();
+    default void write1(){
+        System.out.println("Default from B");
+    }
+    
+}
+class Main implements A,B{
+    public void show(){
+            System.out.println("Abstract from Main");
+        }
+    public static void main(String[]args){
+        A.display();
+        B.display();
+        
+        A a = new Main();
+        a.show();
+        a.write();
+        B b = new Main();
+        b.write1();
+    }
+}
