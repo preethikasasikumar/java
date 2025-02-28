@@ -1,0 +1,59 @@
+class A{
+    public void pronic(){
+        int num =19;
+       int ispronic = 0;
+       for(int i = 1;i<=12;i++){
+           if(i*(i + 1)==num){
+               System.out.println("pronic number");
+               ispronic=1;
+               break;
+           }
+           
+       }
+       if(ispronic==0){
+          System.out.println("Not a Pronic Number"); 
+       }
+    }
+    public void niven(){
+        int num = 145;
+        int sum = 0;
+        int temp = num;
+        while(num>0){
+                int rem = num % 10;
+                sum = sum + rem;
+
+                num = num/10;
+            }
+        
+        if(num % sum ==0){
+            System.out.println("Niven Number");
+        }
+        else{
+            System.out.println("Not a niven number");
+        }
+    }
+    public void abundant(){
+        int num = 12;
+        int sum = 0;
+        for(int i = 1; i<=num/2;i++){
+            if(num%i==0){
+                sum = sum +i;
+            }
+        }
+        if(sum>num){
+            System.out.println("abundant Number");
+        }
+    }
+}
+
+
+
+
+public class Main {
+    public static void main(String[] args) {
+       A obj = new A();
+       obj.pronic();
+       obj.niven();
+       obj.abundant();
+    }
+}
