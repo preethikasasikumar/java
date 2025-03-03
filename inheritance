@@ -1,0 +1,24 @@
+class college{
+    public int aicteid=72072201;
+    public void display(){
+        System.out.println(aicteid);
+    }
+}
+class depts extends college{
+    public int dept = 72072211;
+    public void show(){
+        System.out.println(dept);
+    }
+}
+
+
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		depts d = new depts();
+		d.display();
+		d.show();
+	}
+}
