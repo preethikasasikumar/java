@@ -41,3 +41,31 @@ public class Main {
         s.close();
     }
 }
+
+////////////////////////////////////////////////////////////////////////////////////////
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        String num1 = "999999999999";
+        String num2 = "44444444";
+        int i = num1.length() - 1;
+        int j = num2.length() - 1;
+        int d1, d2, carry  = 0 ;
+        String sum = "";
+        while( i >= 0 || j >= 0 || carry > 0){
+            d1 =(i>=0 )? num1.charAt(i) - '0' : 0;
+            d2 = (j>=0)? num2.charAt(j) - '0': 0;
+            int digitsum = d1+d2+carry;
+            carry = digitsum /10;
+            sum = ( digitsum % 10 ) + sum;
+            i--;
+            j--;
+        }
+        System.out.println(sum);
+        
+            
+        
+    }
+}
