@@ -22,3 +22,52 @@ public class Main
 		d.show();
 	}
 }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+class Shape {
+    public void area() {
+        
+    }
+}
+
+class Rectangle extends Shape {
+    int l , b;
+    public void rectangle(){
+        this.l = l;
+        this.b=b;
+    }
+    public void area(int l, int b) {
+        
+        int area = l * b;
+        System.out.println("Area of Rectangle: " + area);
+    }
+}
+
+
+class square extends Shape{
+    int a;
+    public void area(int a){
+        this.a=a;
+        int area=a*a;
+        System.out.println("The area of Square:" + area);
+    }
+}
+class circle{
+    int r ;
+    double pi = 3.14;
+    public void area(int r){
+        int area=(int) pi * r * r;
+        System.out.println("The area of circle : " + area);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Rectangle r = new Rectangle();
+        r.area(3, 4);
+        square s = new square();
+        s.area( 89);
+        circle c = new circle();
+        c.area(4);
+    }
+}
+
