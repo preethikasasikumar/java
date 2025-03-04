@@ -1,0 +1,21 @@
+without builtin
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scanner = new Scanner(System.in);
+		String s = scanner.next();
+		String reversed_str = "";
+		for(int i = 0 ; i < s.length(); i++){
+		    reversed_str = reversed_str + s.charAt(i);
+		}
+		if(reversed_str.equals(s))
+		{
+		    System.out.println("Palindrome String");
+		}
+		else{
+		    System.out.println("Not a Palindrome");
+		}
+	}
+}
+-------------------------------------------------------------------------------
