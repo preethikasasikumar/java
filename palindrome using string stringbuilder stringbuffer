@@ -37,3 +37,23 @@ public class Main
 		}
 	}
 }
+--------------------------------------------------------------------------------------
+using string buffer
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scanner = new Scanner(System.in);
+		String s = scanner.next();
+		StringBuffer sb = new StringBuffer(s);
+		String reversed_string = sb.reverse().toString();
+		
+		if(reversed_string.equals(s)){
+		    System.out.println("Palindrome String");
+		}
+		else{
+		    System.out.println("Not a Palindrome String");
+		}
+	}
+}
+-----------------------------------------------------------------------------------
