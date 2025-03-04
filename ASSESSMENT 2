@@ -1,0 +1,45 @@
+STRING EXPANSION
+import java.util.Scanner;
+
+public class Main { 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String s = next(); 
+        
+        int i = 0;
+        while(i < s.length()){
+            char ch = s.charAt(i);
+            i++;
+            
+            int count = 0;
+            while(i<s.length() && Character.isDigit(s.charAt(i))){
+              count = count * 10 + (s.charAt(i) - '0'); 
+              i++;
+            }
+            if(count == 0){
+                count = 1;
+            }
+            for(int j = 0 ; j< count ; j++){
+                System.out.print(ch );
+            }
+        }
+    }
+}
+
+
+
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________
+REVERSE A LINE OF TEXT 
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String s = "    I Love       Java Programming";
+        String []words = s.split("\\s+");
+        for(int i = words.length - 1; i >= 0; i--){
+            System.out.print(words[i] +" ");
+        }
+    }
+}
